@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TestCard from "../components/TestCard";
-import axios from "../api/testApi";
+// import axios from "../api/testApi";
 
 const Tests = () => {
   const [tests, setTests] = useState([]);
