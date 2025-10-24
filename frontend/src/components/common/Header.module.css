@@ -1,0 +1,187 @@
+:root {
+  --primary-green: #1a661a;
+  --primary-light: #e6f4e6;
+  --dark-color: #0a3d0a;
+  --text-color: #2e7d32;
+  --transition: 0.3s;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--primary-green);
+}
+
+.logo h1 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.logo span {
+  font-size: 12px;
+  color: var(--text-color);
+  display: block;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 500;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-green);
+  transition: var(--transition);
+}
+
+.nav a:hover {
+  color: var(--primary-green);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userName {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.btnLogout {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btnLogout:hover {
+  background-color: #145214;
+}
+
+.authLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.btnLogin {
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btnLogin:hover {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+.btnRegister {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btnRegister:hover {
+  background-color: #145214;
+}
+
+.toggleBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--primary-green);
+  cursor: pointer;
+}
+
+@media (max-width: 968px) {
+  .toggleBtn {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--primary-light);
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 25px;
+    transition: var(--transition);
+  }
+
+  .nav.open {
+    left: 0;
+  }
+
+  .userMenu,
+  .authLinks {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btnLogin,
+  .btnRegister,
+  .btnLogout {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav a::after {
+    display: none;
+  }
+}

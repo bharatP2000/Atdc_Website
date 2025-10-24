@@ -1,0 +1,181 @@
+.aboutPage {
+  background-color: #f9fff9;
+  color: #1b5e20;
+}
+
+/* ---------- Page Header ---------- */
+.pageHeader {
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.pageHeader h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pageHeader p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ---------- About Intro ---------- */
+.aboutIntro {
+  padding: 70px 0;
+  background-color: white;
+}
+
+.aboutContent h2 {
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.aboutContent p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #1b5e20;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+
+/* ---------- Values Section ---------- */
+.valuesSection {
+  background: #e8f5e9;
+  padding: 80px 0;
+}
+
+.valuesSection h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 60px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.valueCard {
+  background: white;
+  border-radius: 14px;
+  padding: 40px 25px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(67, 160, 71, 0.25);
+}
+
+.valueIcon {
+  font-size: 50px;
+  color: #43a047;
+  margin-bottom: 18px;
+}
+
+.valueCard h3 {
+  font-size: 22px;
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+.valueCard p {
+  color: #388e3c;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ---------- Mission & Vision ---------- */
+.missionVision {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.mvGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px;
+}
+
+.mvCard {
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(67, 160, 71, 0.3);
+  transition: all 0.3s ease;
+}
+
+.mvCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(46, 125, 50, 0.35);
+}
+
+.mvCard h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.mvCard p {
+  font-size: 16px;
+  line-height: 1.9;
+  opacity: 0.95;
+}
+
+/* ---------- Stats Section ---------- */
+.statsSection {
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: white;
+  padding: 80px 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.statCard {
+  text-align: center;
+}
+
+.statCard h3 {
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.statCard p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .aboutContent h2,
+  .valuesSection h2 {
+    font-size: 30px;
+  }
+
+  .mvGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mvCard {
+    padding: 40px 25px;
+  }
+
+  .statCard h3 {
+    font-size: 44px;
+  }
+}

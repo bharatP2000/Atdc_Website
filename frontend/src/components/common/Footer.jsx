@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import './Footer.css';
+import classes from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <div className="footer-section">
+    <footer className={classes.footer}>
+      <div className={classes.container}>
+        <div className={classes.footerContent}>
+          <div className={classes.footerSection}>
             <h3>ATDC Care</h3>
             <p>
               Acharya Tulsi Diagnostic Centre, a Jain Charitable Organization providing
               quality healthcare services at affordable prices since 2012.
             </p>
-            <div className="social-links">
+            <div className={classes.socialLinks}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-section">
+          <div className={classes.footerSection}>
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className={classes.footerSection}>
             <h4>Our Services</h4>
             <ul>
               <li>Blood Tests</li>
@@ -52,9 +52,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className={classes.footerSection}>
             <h4>Contact Us</h4>
-            <ul className="contact-info">
+            <ul className={classes.contactInfo}>
               <li>
                 <FaMapMarkerAlt />
                 <span>Lake Town, Kolkata, West Bengal</span>
@@ -71,9 +71,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom">
+        <div className={classes.footerBottom}>
           <p>&copy; {new Date().getFullYear()} ATDC Care. All rights reserved.</p>
-          <div className="footer-links">
+          <div className={classes.footerLinks}>
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
           </div>
