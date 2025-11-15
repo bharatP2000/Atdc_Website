@@ -33,11 +33,7 @@ const About = () => {
       title: 'Affordability',
       description:
         'Quality healthcare services at prices everyone can afford.',
-    },
-    {
-      description:
-        'Quality healthcare services at prices everyone can afford.',
-    },
+    }
   ];
 
   return (
@@ -57,8 +53,7 @@ const About = () => {
           <div className={classes.aboutContent}>
             <h2>About ATDC</h2>
             <p>
-              Acharya Tulsi Diagnostic Centre (ATDC), a Jain Charitable
-              Organization, was established in 2012 under the auspices of
+              Acharya Tulsi Diagnostic Centre (ATDC) was established in 2012 under the auspices of
               Akhil Bhartiya Terapanth Yuvak Parishad (ABTYP). ATDC was founded
               with a vision to serve society through community healthcare and
               support the needy with affordable treatment and diagnostics.
@@ -66,17 +61,17 @@ const About = () => {
 
             <p>
               ATDC is one of the leading diagnostic chains in India, offering best-in-class
-              laboratory testing services at economical prices. ATDC Purvanchal Kolkata was
-              established in the year 2019 in Lake Town, Kolkata by Terapanth Yuvak Parishad,
-              Purvanchal Kolkata to provide quality health check-up facilities at an
+              laboratory testing services at economical prices. ATDC Howrah is
+              established in the year 2025 in Howrah by Terapanth Yuvak Parishad,
+              Uttar Howrah Trust to provide quality health check-up facilities at an
               affordable price.
             </p>
 
             <p>
               It is a reputable facility offering a wide range of Diagnostic and Dental
               services to the community. The centre provides a comprehensive range of
-              diagnostic tests including blood tests, urine analysis, X-ray, USG, Echo,
-              Holter, NCV, EMG, CT Scan, MRI, Endoscopy, Colonoscopy, and Mammography.
+              diagnostic tests including blood tests, urine analysis, lipid profile, thyroid profile, X-ray, ECG,
+              NCV.
             </p>
           </div>
         </div>
@@ -115,7 +110,7 @@ const About = () => {
               <p>
                 To become the most trusted and preferred diagnostic center in Eastern India,
                 known for our commitment to quality, affordability, and compassionate care,
-                while serving the community through charitable healthcare initiatives.
+                while serving the community through healthcare initiatives.
               </p>
             </div>
           </div>
@@ -123,28 +118,48 @@ const About = () => {
       </section>
 
       {/* Statistics */}
-      <section className={classes.statsSection}>
+      {/* Why ATDC Is Different */}
+      <section className={classes.uspSection}>
         <div className={classes.container}>
-          <div className={classes.statsGrid}>
-            <div className={classes.statCard}>
-              <h3>10+</h3>
-              <p>Years of Experience</p>
+          <h2>Why ATDC Is Different ?</h2>
+          <div className={classes.uspGrid}>
+
+            <div className={classes.uspCard}>
+              <h3>Transparent Pricing</h3>
+              <p>
+                Clear and affordable pricing with no hidden charges—ensuring accessible 
+                diagnostics for everyone.
+              </p>
             </div>
-            <div className={classes.statCard}>
-              <h3>50,000+</h3>
-              <p>Patients Served</p>
+
+            <div className={classes.uspCard}>
+              <h3>Trust Initiative</h3>
+              <p>
+                Founded and operated by Terapanth Yuvak Parishad with a mission to 
+                serve society through healthcare.
+              </p>
             </div>
-            <div className="stat-card">
-              <h3>100+</h3>
-              <p>Diagnostic Tests</p>
+
+            <div className={classes.uspCard}>
+              <h3>High Accuracy in Diagnostics</h3>
+              <p>
+                Powered by modern technology and standardized testing for reliable 
+                and precise results.
+              </p>
             </div>
-            <div className="stat-card">
-              <h3>50+</h3>
-              <p>Expert Staff</p>
+
+            <div className={classes.uspCard}>
+              <h3>Friendly Support Staff</h3>
+              <p>
+                A compassionate and trained team ensuring a smooth and comfortable 
+                experience for every patient.
+              </p>
             </div>
+
           </div>
         </div>
       </section>
+
     </div>
   );
 };

@@ -50,7 +50,7 @@ const Doctors = () => {
       "Wednesday: 5:00 PM – 6:00 PM",
       "Saturday: 5:00 PM – 6:00 PM",
     ],
-    image: "https://www.w3schools.com/howto/img_avatar2.png",
+    image: "https://www.w3schools.com/howto/img_avatar.png",
   },
   {
     _id: "5",
@@ -74,7 +74,7 @@ const Doctors = () => {
       "Wednesday: 3:00 PM – 5:00 PM",
       "Friday: 3:00 PM – 5:00 PM",
     ],
-    image: "https://www.w3schools.com/howto/img_avatar2.png",
+    image: "https://www.w3schools.com/howto/img_avatar.png",
   },
 ];
 
@@ -84,7 +84,7 @@ const Doctors = () => {
       {/* Header */}
       <section className="doctors-header">
         <h1>Our Doctors</h1>
-        <p>Meet our experienced and highly qualified medical professionals.</p>
+        <p>Meet our some experienced and highly qualified medical professionals.</p>
       </section>
 
       <div className="container">
