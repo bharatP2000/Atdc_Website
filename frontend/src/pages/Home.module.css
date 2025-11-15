@@ -11,26 +11,39 @@
   font-family: 'Poppins', sans-serif;
   color: var(--dark);
   background-color: var(--white);
+<<<<<<< HEAD
   padding: 130px 0;
+=======
+  padding: 40px 0;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 /* Containers */
 .container {
   width: 90%;
+<<<<<<< HEAD
   margin: 0 auto;
   padding: 0 20px;
+=======
+  max-width: 1200px;
+  margin: 0 auto;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 /* HERO SECTION */
 .hero {
+<<<<<<< HEAD
   width: 90%;
   margin: 80px auto 60px;
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   background: linear-gradient(135deg, rgba(46, 139, 87, 0.85), rgba(20, 80, 50, 0.85)),
     url('https://img.freepik.com/free-photo/medical-banner-with-stethoscope_23-2149611190.jpg') center/cover;
   color: var(--white);
   text-align: center;
   padding: 120px 20px;
   border-radius: 20px;
+<<<<<<< HEAD
 }
 
 .hero h1 {
@@ -38,11 +51,24 @@
   font-weight: 700;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
+=======
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .hero p {
   margin: 20px auto;
+<<<<<<< HEAD
   font-size: clamp(1rem, 2.5vw, 1.1rem);
+=======
+  font-size: 1.1rem;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   line-height: 1.6;
   max-width: 700px;
   opacity: 0.95;
@@ -50,7 +76,10 @@
 
 .heroButtons {
   display: flex;
+<<<<<<< HEAD
   flex-wrap: wrap;
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   justify-content: center;
   gap: 15px;
   margin-top: 25px;
@@ -65,10 +94,13 @@
   border-radius: 30px;
   font-weight: 600;
   transition: var(--transition);
+<<<<<<< HEAD
   font-size: clamp(0.9rem, 2vw, 1rem);
   display: inline-block;
   text-align: center;
   min-width: 140px;
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .btnPrimary {
@@ -115,7 +147,11 @@
 }
 
 .sectionHeader h2 {
+<<<<<<< HEAD
   font-size: clamp(1.8rem, 4vw, 2rem);
+=======
+  font-size: 2rem;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   margin-bottom: 10px;
   color: var(--primary-green);
 }
@@ -123,21 +159,33 @@
 .sectionHeader p {
   color: var(--gray);
   margin-bottom: 40px;
+<<<<<<< HEAD
   font-size: clamp(0.9rem, 2vw, 1rem);
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .featuresGrid {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   text-align: center;
   margin-top: 30px;
+=======
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .featureCard {
   background: var(--white);
   border-radius: 15px;
+<<<<<<< HEAD
   padding: 30px 15px;
+=======
+  padding: 40px 20px;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
 }
@@ -149,6 +197,7 @@
 
 .featureCard h2 {
   color: var(--primary-green);
+<<<<<<< HEAD
   font-size: clamp(1.8rem, 5vw, 2.2rem);
   margin-bottom: 10px;
   font-weight: 700;
@@ -167,6 +216,10 @@
 .featureCard p {
   color: var(--gray);
   font-size: clamp(0.85rem, 2vw, 0.95rem);
+=======
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 /* SERVICES SECTION */
@@ -176,22 +229,32 @@
 
 .servicesGrid {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+=======
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   gap: 30px;
 }
 
 .serviceCard {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   background: var(--white);
   border-radius: 15px;
   padding: 40px 25px;
   text-align: center;
   transition: var(--transition);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+<<<<<<< HEAD
   min-height: 200px;
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .serviceCard:hover {
@@ -202,7 +265,11 @@
 }
 
 .serviceIcon {
+<<<<<<< HEAD
   font-size: clamp(2rem, 5vw, 2.5rem);
+=======
+  font-size: 2.5rem;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   color: var(--primary-green);
   margin-bottom: 15px;
   transition: var(--transition);
@@ -212,6 +279,7 @@
   color: var(--white);
 }
 
+<<<<<<< HEAD
 .serviceCard h3 {
   font-size: clamp(1.1rem, 2.5vw, 1.3rem);
   margin-bottom: 10px;
@@ -221,6 +289,8 @@
   font-size: clamp(0.85rem, 2vw, 0.95rem);
 }
 
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 .servicesCta {
   text-align: center;
   margin-top: 50px;
@@ -228,11 +298,18 @@
 
 /* ABOUT SECTION */
 .aboutPreview {
+<<<<<<< HEAD
   width: 90%;
   margin: 0 auto 60px;
   padding: 80px 20px;
   background: var(--light-green);
   border-radius: 20px;
+=======
+  padding: 80px 20px;
+  background: var(--light-green);
+  border-radius: 20px;
+  margin-bottom: 60px;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .aboutContent {
@@ -250,32 +327,50 @@
 .aboutText h2 {
   color: var(--primary-green);
   margin-bottom: 15px;
+<<<<<<< HEAD
   font-size: clamp(1.5rem, 4vw, 2rem);
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .aboutText p {
   color: var(--gray);
   line-height: 1.7;
   margin-bottom: 15px;
+<<<<<<< HEAD
   font-size: clamp(0.9rem, 2vw, 1rem);
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 .aboutImage {
   flex: 1;
   text-align: center;
+<<<<<<< HEAD
   min-width: 280px;
 }
 
 .imagePlaceholder {
   width: clamp(200px, 40vw, 260px);
   height: clamp(200px, 40vw, 260px);
+=======
+}
+
+.imagePlaceholder {
+  width: 260px;
+  height: 260px;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   background: var(--white);
   border-radius: 50%;
   border: 6px solid var(--primary-green);
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   font-size: clamp(3rem, 8vw, 4rem);
+=======
+  font-size: 4rem;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   color: var(--primary-green);
   margin: 0 auto;
   box-shadow: 0 4px 16px rgba(46, 139, 87, 0.3);
@@ -283,8 +378,11 @@
 
 /* CTA SECTION */
 .cta {
+<<<<<<< HEAD
   width: 90%;
   margin: 0 auto;
+=======
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   background: linear-gradient(135deg, #2e8b57, #1e6f45);
   color: var(--white);
   text-align: center;
@@ -293,17 +391,26 @@
 }
 
 .cta h2 {
+<<<<<<< HEAD
   font-size: clamp(1.8rem, 4vw, 2.2rem);
+=======
+  font-size: 2.2rem;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   margin-bottom: 15px;
 }
 
 .cta p {
   margin-bottom: 30px;
+<<<<<<< HEAD
   font-size: clamp(1rem, 2.5vw, 1.1rem);
+=======
+  font-size: 1.1rem;
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+<<<<<<< HEAD
   .home {
     padding: 100px 0;
   }
@@ -437,3 +544,12 @@
     transform: scale(0.98);
   }
 }
+=======
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .aboutContent {
+    flex-direction: column;
+  }
+}
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024

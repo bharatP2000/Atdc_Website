@@ -21,10 +21,17 @@ const Home = () => {
   ];
 
   const features = [
+<<<<<<< HEAD
     { number: 10, suffix: '+', text: 'Years of Service' },
     { number: 50000, suffix: '+', text: 'Happy Patients' },
     { number: 100, suffix: '+', text: 'Diagnostic Tests' },
     { number: 24, suffix: '/7', text: 'Support Available' },
+=======
+    { number: '10+', text: 'Years of Service' },
+    { number: '50K+', text: 'Happy Patients' },
+    { number: '100+', text: 'Diagnostic Tests' },
+    { number: '24/7', text: 'Support Available' },
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   ];
 
   // ✨ Animation Logic
@@ -82,7 +89,11 @@ const Home = () => {
           <div className={classes.heroContent}>
             <h1>Quality Healthcare at Affordable Prices</h1>
             <p>
+<<<<<<< HEAD
               ATDC Health - Acharya Tulsi Diagnostic Centre, providing comprehensive
+=======
+              ATDC Care - Acharya Tulsi Diagnostic Centre, providing comprehensive
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
               diagnostic and dental services in Kolkata since 2012.
             </p>
             <div className={classes.heroButtons}>
@@ -94,7 +105,11 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
+<<<<<<< HEAD
       <section className={classes.features} ref={sectionRef}>
+=======
+      <section className={classes.features}>
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
         <div className={classes.container}>
           <div className={classes.sectionHeader}>
             <h2>Why Choose Us?</h2>
@@ -103,10 +118,14 @@ const Home = () => {
           <div className={classes.featuresGrid}>
             {features.map((f, i) => (
               <div key={i} className={classes.featureCard}>
+<<<<<<< HEAD
                 <h2>
                   {animatedValues[i].toLocaleString()}
                   <span className={classes.suffix}>{f.suffix}</span>
                 </h2>
+=======
+                <h2>{f.number}</h2>
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
                 <p>{f.text}</p>
               </div>
             ))}
@@ -141,7 +160,11 @@ const Home = () => {
         <div className={classes.container}>
           <div className={classes.aboutContent}>
             <div className={classes.aboutText}>
+<<<<<<< HEAD
               <h2>About ATDC Health</h2>
+=======
+              <h2>About ATDC Care</h2>
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
               <p>
                 Acharya Tulsi Diagnostic Centre (ATDC), a Jain Charitable Organization,
                 was established in 2012 under the auspices of Akhil Bhartiya Terapanth
@@ -149,7 +172,11 @@ const Home = () => {
                 treatment and diagnostic care.
               </p>
               <p>
+<<<<<<< HEAD
                 ATDC Uttar Howrah was established in 2019 to provide quality health
+=======
+                ATDC Purvanchal Kolkata was established in 2019 to provide quality health
+>>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
                 check-up facilities at an affordable price.
               </p>
               <Link to="/about" className={classes.btnSecondary}>Learn More</Link>

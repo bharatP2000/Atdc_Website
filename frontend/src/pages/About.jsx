@@ -9,10 +9,14 @@ const About = () => {
       title: 'Patient Care',
       description:
         'We prioritize patient wellbeing and provide compassionate care to everyone.',
+      description:
+        'We prioritize patient wellbeing and provide compassionate care to everyone.',
     },
     {
       icon: <FaAward />,
       title: 'Quality Service',
+      description:
+        'Delivering accurate diagnostic results with state-of-the-art equipment.',
       description:
         'Delivering accurate diagnostic results with state-of-the-art equipment.',
     },
@@ -21,10 +25,16 @@ const About = () => {
       title: 'Expert Team',
       description:
         'Experienced medical professionals dedicated to your health.',
+      description:
+        'Experienced medical professionals dedicated to your health.',
     },
     {
       icon: <FaHandshake />,
       title: 'Affordability',
+      description:
+        'Quality healthcare services at prices everyone can afford.',
+    },
+    {
       description:
         'Quality healthcare services at prices everyone can afford.',
     },
@@ -55,23 +65,18 @@ const About = () => {
             </p>
 
             <p>
-              Over the years, ATDC has grown into one of India’s most trusted
-              diagnostic chains, offering best-in-class laboratory and diagnostic
-              services at economical prices. With advanced technology and a qualified
-              team, we ensure accurate, reliable, and timely reports.
+              ATDC is one of the leading diagnostic chains in India, offering best-in-class
+              laboratory testing services at economical prices. ATDC Purvanchal Kolkata was
+              established in the year 2019 in Lake Town, Kolkata by Terapanth Yuvak Parishad,
+              Purvanchal Kolkata to provide quality health check-up facilities at an
+              affordable price.
             </p>
 
             <p>
-              ATDC Uttar Howrah, established in 2025 by Terapanth Yuvak Parishad,
-              Uttar Howrah, carries forward this mission by providing affordable,
-              high-quality health check-up facilities to the community.
-            </p>
-
-            <p>
-              Our centre offers a wide range of Diagnostic and Dental services,
-              including blood tests, urine analysis, X-ray, USG, Echo, Holter,
-              NCV, EMG, MRI, Endoscopy, Colonoscopy, and Mammography — ensuring
-              complete care under one roof.
+              It is a reputable facility offering a wide range of Diagnostic and Dental
+              services to the community. The centre provides a comprehensive range of
+              diagnostic tests including blood tests, urine analysis, X-ray, USG, Echo,
+              Holter, NCV, EMG, CT Scan, MRI, Endoscopy, Colonoscopy, and Mammography.
             </p>
           </div>
         </div>
@@ -100,17 +105,17 @@ const About = () => {
             <div className={classes.mvCard}>
               <h2>Our Mission</h2>
               <p>
-                To provide accessible, affordable, and quality diagnostic and
-                healthcare services to all sections of society through early
-                detection, preventive care, and compassionate service.
+                To provide accessible, affordable, and quality diagnostic and healthcare
+                services to all sections of society, helping people maintain and improve
+                their health through early detection and preventive care.
               </p>
             </div>
             <div className={classes.mvCard}>
               <h2>Our Vision</h2>
               <p>
-                To become the most trusted diagnostic centre in India,
-                setting benchmarks in quality, affordability, and community-driven
-                healthcare while expanding charitable initiatives for public welfare.
+                To become the most trusted and preferred diagnostic center in Eastern India,
+                known for our commitment to quality, affordability, and compassionate care,
+                while serving the community through charitable healthcare initiatives.
               </p>
             </div>
           </div>
@@ -129,12 +134,12 @@ const About = () => {
               <h3>50,000+</h3>
               <p>Patients Served</p>
             </div>
-            <div className={classes.statCard}>
-              <h3>30+</h3>
+            <div className="stat-card">
+              <h3>100+</h3>
               <p>Diagnostic Tests</p>
             </div>
-            <div className={classes.statCard}>
-              <h3>10+</h3>
+            <div className="stat-card">
+              <h3>50+</h3>
               <p>Expert Staff</p>
             </div>
           </div>
