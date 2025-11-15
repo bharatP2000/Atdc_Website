@@ -1,13 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowAltCircleDown } from 'react-icons/fa';
 import classes from './Footer.module.css';
 import devlogo from '../../assets/developerlogo.png';
-=======
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import classes from './Footer.module.css';
->>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 
 const Footer = () => {
   return (
@@ -15,11 +10,7 @@ const Footer = () => {
       <div className={classes.container}>
         <div className={classes.footerContent}>
           <div className={classes.footerSection}>
-<<<<<<< HEAD
             <h3>ATDC Health</h3>
-=======
-            <h3>ATDC Care</h3>
->>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
             <p>
               Acharya Tulsi Diagnostic Centre, a Jain Charitable Organization providing
               quality healthcare services at affordable prices since 2012.
@@ -82,7 +73,6 @@ const Footer = () => {
         </div>
 
         <div className={classes.footerBottom}>
-<<<<<<< HEAD
           <p>&copy; {new Date().getFullYear()} ATDC Health. All rights reserved.</p>
 {/* 
           <div className={classes.pbLogo}>
@@ -96,9 +86,6 @@ const Footer = () => {
             <span>PB Developers</span>
           </div> */}
 
-=======
-          <p>&copy; {new Date().getFullYear()} ATDC Care. All rights reserved.</p>
->>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
           <div className={classes.footerLinks}>
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>

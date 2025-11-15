@@ -13,11 +13,7 @@
 }
 
 .container {
-<<<<<<< HEAD
   max-width: 100%;
-=======
-  max-width: 1200px;
->>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -132,7 +128,6 @@
 .footerLinks a:hover {
   opacity: 1;
   color: var(--primary-green);
-<<<<<<< HEAD
 }
 
 .devBy {
@@ -153,8 +148,6 @@
   width: 35px;     /* adjust size here */
   height: auto;
   object-fit: contain;
-=======
->>>>>>> 4e051a8cda95a731ae2443fdc2aceffd32ae3024
 }
 
 @media (max-width: 768px) {
