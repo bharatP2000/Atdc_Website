@@ -11,6 +11,12 @@ const Services = () => {
   // Static categories shown as tiles
   const serviceCategories = [
     {
+      title: "All Tests", 
+      icon: "💊",
+      description: "Comprehensive testing with accurate results",
+      category: "All Tests",
+    },
+    {
       title: "Blood Tests",
       icon: "🧪",
       description: "Comprehensive blood testing with accurate results",

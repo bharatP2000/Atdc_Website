@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
 
         <div className={classes.footerBottom}>
-          <p>&copy; {new Date().getFullYear()} ATDC Health. All rights reserved.</p>
+          
 
           <div className={classes.developerCredit}>
             <span className={classes.developedBy}>Developed & Maintained by</span>
@@ -100,14 +100,18 @@ const Footer = () => {
               rel="noopener noreferrer"
               className={classes.developerLink}
             >
-              <span className={classes.developerName}>BHARAT</span>
+              <span className={classes.developerName}>BHARAT KUMAR BAID</span>
             </a>
+            <br/>
+            <p>&copy; {new Date().getFullYear()} ATDC Health. All rights reserved.</p>
           </div>
 
-          <div className={classes.footerLinks}>
+          
+
+          {/* <div className={classes.footerLinks}>
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
-          </div>
+          </div> */}
         </div>
 
       </div>

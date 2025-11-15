@@ -179,7 +179,7 @@
 /* Small Mobile */
 @media (max-width: 480px) {
   .doctors-header {
-    padding: 40px 10px;
+    padding: 60px 20px 20px 20px;
   }
 
   .doctor-card {

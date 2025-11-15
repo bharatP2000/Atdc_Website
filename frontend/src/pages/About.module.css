@@ -261,7 +261,7 @@
 @media (max-width: 480px) {
 
   .pageHeader {
-    padding: 50px 15px;
+    padding: 90px 15px 30px 15px;
   }
 
   .pageHeader h1 {
