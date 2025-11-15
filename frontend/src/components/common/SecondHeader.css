@@ -1,0 +1,139 @@
+:root {
+  --primary-green: #2e8b57;
+  --light-green: #f1faf4;
+  --white: #ffffff;
+  --dark: #1f1f1f;
+  --gray: #555;
+  --accent-pink: #f84d70;
+}
+
+.topHeader {
+  width: 90%;
+  height: calc(30px * var(--rpx));
+  margin: 0 auto;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(8px * var(--rpx)) 0%;
+  border-bottom: calc(1px * var(--rpx)) solid rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  font-size: calc(14px * var(--rpx));
+  color: var(--dark);
+}
+
+.topHeader-left,
+.topHeader-center,
+.topHeader-right {
+  display: flex;
+  align-items: center;
+  gap: calc(24px * var(--rpx));
+}
+
+.topHeader-center{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+.certification {
+  display: flex;
+  align-items: center;
+  gap: calc(6px * var(--rpx));
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.certIcon {
+  width: calc(28px * var(--rpx));
+  height: calc(28px * var(--rpx));
+  object-fit: contain;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: calc(6px * var(--rpx));
+  color: var(--dark);
+  font-weight: 500;
+  font-size: calc(15px * var(--rpx));
+}
+
+.icon {
+  color: var(--primary-green);
+  font-size: calc(18px * var(--rpx));
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: calc(18px * var(--rpx));
+  margin-left: calc(12px * var(--rpx));
+}
+
+.socialIcon {
+  font-size: calc(24px * var(--rpx));
+  color: var(--gray);
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  color: var(--primary-green);
+}
+
+.topHeader-right {
+  display: flex;
+  align-items: center;
+  gap: calc(10px * var(--rpx));
+  border-left: calc(1px * var(--rpx)) solid rgba(0, 0, 0, 0.08);
+  padding-left: calc(16px * var(--rpx));
+}
+
+.bookText {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.homeBtn {
+  background: var(--accent-pink);
+  color: var(--white);
+  border: none;
+  border-radius: calc(6px * var(--rpx));
+  padding: calc(6px * var(--rpx)) calc(14px * var(--rpx));
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.homeBtn:hover {
+  background: #ff5e83;
+}
+
+.loginText {
+  font-weight: 600;
+  color: var(--accent-pink);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.loginText:hover {
+  color: var(--primary-green);
+}
+
+@media (max-width: 1024px) {
+  .topHeader {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .topHeader-left,
+  .topHeader-center,
+  .topHeader-right {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}

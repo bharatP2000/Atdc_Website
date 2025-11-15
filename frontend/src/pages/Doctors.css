@@ -1,0 +1,206 @@
+:root {
+  --primary-green: #2e8b57;
+  --light-green: #f1faf4;
+  --white: #ffffff;
+  --dark: #1f1f1f;
+  --gray: #555;
+}
+
+/* Page Wrapper */
+.doctors-page {
+  background: #fafafa;
+  padding: 40px 0;
+}
+
+/* Header Section */
+.doctors-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #ffffff, #f1faf4);
+}
+
+.doctors-header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--primary-green);
+}
+
+.doctors-header p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--gray);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Doctors Grid */
+.doctors-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 35px;
+}
+
+/* Doctor Card */
+.doctor-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+  border: 1px solid #e6e6e6;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-green);
+}
+
+/* Doctor Image */
+.doctor-img-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  border: 4px solid var(--primary-green);
+  background: var(--light-green);
+}
+
+.doctor-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Doctor Info */
+.doctor-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.doctor-specialization {
+  font-size: 16px;
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.doctor-qual {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.doctor-schedule {
+  margin-top: 12px;
+  background: var(--light-green);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.doctor-fee {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+/* Button */
+.doctor-btn {
+  margin-top: 15px;
+  display: block;
+  background: var(--primary-green);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.doctor-btn:hover {
+  background: #1d6b40;
+}
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets & Mobile */
+@media (max-width: 768px) {
+  .doctors-header h1 {
+    font-size: 28px;
+  }
+
+  .doctors-header p {
+    font-size: 15px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .doctor-card {
+    padding: 20px;
+  }
+
+  .doctor-img-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .doctor-info h3 {
+    font-size: 18px;
+  }
+
+  .doctor-specialization,
+  .doctor-qual,
+  .doctor-schedule,
+  .doctor-fee {
+    font-size: 14px;
+  }
+
+  .doctor-btn {
+    width: 100%;
+    padding: 10px 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .doctors-header {
+    padding: 40px 10px;
+  }
+
+  .doctor-card {
+    padding: 16px;
+  }
+
+  .doctor-img-wrapper {
+    width: 75px;
+    height: 75px;
+  }
+
+  .doctor-info h3 {
+    font-size: 16px;
+  }
+
+  .doctor-specialization {
+    font-size: 13px;
+  }
+
+  .doctor-qual,
+  .doctor-schedule {
+    font-size: 12px;
+  }
+}

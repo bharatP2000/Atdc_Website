@@ -9,14 +9,14 @@ export const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // Set axios default authorization header
-  useEffect(() => {
-    if (token) {
-      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-      loadUser();
-    } else {
-      setLoading(false);
-    }
-  }, [token]);
+  // useEffect(() => {
+  //   if (token) {
+  //     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+  //     loadUser();
+  //   } else {
+  //     setLoading(false);
+  //   }
+  // }, [token]);
 
   // Load user
   const loadUser = async () => {

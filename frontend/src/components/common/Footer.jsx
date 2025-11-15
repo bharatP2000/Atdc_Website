@@ -1,20 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import './Footer.css';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowAltCircleDown } from 'react-icons/fa';
+import classes from './Footer.module.css';
+import devlogo from '../../assets/developerlogo.png';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>ATDC Care</h3>
+    <footer className={classes.footer}>
+      <div className={classes.container}>
+        <div className={classes.footerContent}>
+          <div className={classes.footerSection}>
+            <h3>ATDC Health</h3>
             <p>
               Acharya Tulsi Diagnostic Centre, a Jain Charitable Organization providing
               quality healthcare services at affordable prices since 2012.
             </p>
-            <div className="social-links">
+            <div className={classes.socialLinks}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
@@ -30,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-section">
+          <div className={classes.footerSection}>
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -41,7 +42,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className={classes.footerSection}>
             <h4>Our Services</h4>
             <ul>
               <li>Blood Tests</li>
@@ -52,32 +53,45 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className={classes.footerSection}>
             <h4>Contact Us</h4>
-            <ul className="contact-info">
+            <ul className={classes.contactInfo}>
               <li>
                 <FaMapMarkerAlt />
-                <span>Lake Town, Kolkata, West Bengal</span>
+                <span>Vindhyachal Apartment, Howrah, West Bengal</span>
               </li>
               <li>
                 <FaPhone />
-                <span>+91 1234567890</span>
+                <span>033 2665-0022</span>
               </li>
               <li>
                 <FaEnvelope />
-                <span>info@atdccare.com</span>
+                <span>typuhtrust@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} ATDC Care. All rights reserved.</p>
-          <div className="footer-links">
+        <div className={classes.footerBottom}>
+          <p>&copy; {new Date().getFullYear()} ATDC Health. All rights reserved.</p>
+{/* 
+          <div className={classes.pbLogo}>
+            <span>Developed & Maintained by </span>
+            <br/>
+            <img 
+              src={devlogo}        // <-- replace with your logo import or URL
+              alt="PB Developers Logo"
+              className={classes.devLogo}
+            />
+            <span>PB Developers</span>
+          </div> */}
+
+          <div className={classes.footerLinks}>
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
           </div>
         </div>
+
       </div>
     </footer>
   );

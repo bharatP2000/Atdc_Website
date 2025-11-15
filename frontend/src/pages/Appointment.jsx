@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { appointmentsAPI, servicesAPI } from '../services/api';
 import { AppContext } from '../context/AppContext';
 import { toast } from 'react-toastify';
-import './Appointment.css';
+import classes from './Appointment.module.css';
 
 const Appointments = () => {
   const location = useLocation();
@@ -28,16 +28,14 @@ const Appointments = () => {
 
   useEffect(() => {
     fetchServices();
-    if (user) {
-      fetchAppointments();
-    }
+    if (user) fetchAppointments();
   }, [user]);
 
   const fetchServices = async () => {
     try {
       const response = await servicesAPI.getAll();
       setServices(response.data.data);
-    } catch (error) {
+    } catch {
       toast.error('Failed to load services');
     }
   };
@@ -52,10 +50,7 @@ const Appointments = () => {
   };
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -78,7 +73,7 @@ const Appointments = () => {
 
       await appointmentsAPI.create(appointmentData);
       toast.success('Appointment booked successfully!');
-      
+
       setFormData({
         service: '',
         appointmentDate: '',
@@ -105,44 +100,38 @@ const Appointments = () => {
         await appointmentsAPI.cancel(id);
         toast.success('Appointment cancelled successfully');
         fetchAppointments();
-      } catch (error) {
+      } catch {
         toast.error('Failed to cancel appointment');
       }
     }
   };
 
   const timeSlots = [
-    '09:00-10:00',
-    '10:00-11:00',
-    '11:00-12:00',
-    '12:00-13:00',
-    '14:00-15:00',
-    '15:00-16:00',
-    '16:00-17:00',
-    '17:00-18:00'
+    '09:00-10:00', '10:00-11:00', '11:00-12:00', '12:00-13:00',
+    '14:00-15:00', '15:00-16:00', '16:00-17:00', '17:00-18:00'
   ];
 
   return (
-    <div className="appointments-page">
-      <section className="page-header">
-        <div className="container">
+    <div className={classes.appointmentsPage}>
+      <section className={classes.pageHeader}>
+        <div className={classes.container}>
           <h1>Book Appointment</h1>
           <p>Schedule your diagnostic tests and health checkups</p>
         </div>
       </section>
 
-      <section className="appointments-section">
-        <div className="container">
-          <div className="appointments-tabs">
+      <section className={classes.appointmentsSection}>
+        <div className={classes.container}>
+          <div className={classes.appointmentsTabs}>
             <button
-              className={`tab-btn ${showForm ? 'active' : ''}`}
+              className={`${classes.tabBtn} ${showForm ? classes.active : ''}`}
               onClick={() => setShowForm(true)}
             >
               Book New Appointment
             </button>
             {user && (
               <button
-                className={`tab-btn ${!showForm ? 'active' : ''}`}
+                className={`${classes.tabBtn} ${!showForm ? classes.active : ''}`}
                 onClick={() => setShowForm(false)}
               >
                 My Appointments
@@ -151,20 +140,19 @@ const Appointments = () => {
           </div>
 
           {showForm ? (
-            <div className="appointment-form-container">
-              <form onSubmit={handleSubmit} className="appointment-form">
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="service">Select Service *</label>
+            <div className={classes.appointmentFormContainer}>
+              <form onSubmit={handleSubmit} className={classes.appointmentForm}>
+                <div className={classes.formRow}>
+                  <div className={classes.formGroup}>
+                    <label>Select Service *</label>
                     <select
-                      id="service"
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
                       required
                     >
                       <option value="">Choose a service</option>
-                      {services.map((service) => (
+                      {services.map(service => (
                         <option key={service._id} value={service._id}>
                           {service.name} - ₹{service.price}
                         </option>
@@ -173,12 +161,11 @@ const Appointments = () => {
                   </div>
                 </div>
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="appointmentDate">Appointment Date *</label>
+                <div className={classes.formRow}>
+                  <div className={classes.formGroup}>
+                    <label>Appointment Date *</label>
                     <input
                       type="date"
-                      id="appointmentDate"
                       name="appointmentDate"
                       value={formData.appointmentDate}
                       onChange={handleChange}
@@ -187,31 +174,27 @@ const Appointments = () => {
                     />
                   </div>
 
-                  <div className="form-group">
-                    <label htmlFor="timeSlot">Time Slot *</label>
+                  <div className={classes.formGroup}>
+                    <label>Time Slot *</label>
                     <select
-                      id="timeSlot"
                       name="timeSlot"
                       value={formData.timeSlot}
                       onChange={handleChange}
                       required
                     >
                       <option value="">Select time slot</option>
-                      {timeSlots.map((slot) => (
-                        <option key={slot} value={slot}>
-                          {slot}
-                        </option>
+                      {timeSlots.map(slot => (
+                        <option key={slot} value={slot}>{slot}</option>
                       ))}
                     </select>
                   </div>
                 </div>
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="patientName">Patient Name *</label>
+                <div className={classes.formRow}>
+                  <div className={classes.formGroup}>
+                    <label>Patient Name *</label>
                     <input
                       type="text"
-                      id="patientName"
                       name="patientName"
                       value={formData.patientName}
                       onChange={handleChange}
@@ -220,11 +203,10 @@ const Appointments = () => {
                     />
                   </div>
 
-                  <div className="form-group">
-                    <label htmlFor="patientAge">Patient Age *</label>
+                  <div className={classes.formGroup}>
+                    <label>Patient Age *</label>
                     <input
                       type="number"
-                      id="patientAge"
                       name="patientAge"
                       value={formData.patientAge}
                       onChange={handleChange}
@@ -236,11 +218,10 @@ const Appointments = () => {
                   </div>
                 </div>
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="patientGender">Gender *</label>
+                <div className={classes.formRow}>
+                  <div className={classes.formGroup}>
+                    <label>Gender *</label>
                     <select
-                      id="patientGender"
                       name="patientGender"
                       value={formData.patientGender}
                       onChange={handleChange}
@@ -252,11 +233,10 @@ const Appointments = () => {
                     </select>
                   </div>
 
-                  <div className="form-group">
-                    <label htmlFor="contactNumber">Contact Number *</label>
+                  <div className={classes.formGroup}>
+                    <label>Contact Number *</label>
                     <input
                       type="tel"
-                      id="contactNumber"
                       name="contactNumber"
                       value={formData.contactNumber}
                       onChange={handleChange}
@@ -267,10 +247,9 @@ const Appointments = () => {
                   </div>
                 </div>
 
-                <div className="form-group">
-                  <label htmlFor="notes">Additional Notes</label>
+                <div className={classes.formGroup}>
+                  <label>Additional Notes</label>
                   <textarea
-                    id="notes"
                     name="notes"
                     value={formData.notes}
                     onChange={handleChange}
@@ -279,23 +258,24 @@ const Appointments = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-primary" disabled={loading}>
+                <button type="submit" className={classes.primaryBtn} disabled={loading}>
                   {loading ? 'Booking...' : 'Book Appointment'}
                 </button>
               </form>
             </div>
           ) : (
-            <div className="appointments-list">
+            <div className={classes.appointmentsList}>
               {appointments.length > 0 ? (
                 appointments.map((appointment) => (
-                  <div key={appointment._id} className="appointment-card">
-                    <div className="appointment-header">
+                  <div key={appointment._id} className={classes.appointmentCard}>
+                    <div className={classes.appointmentHeader}>
                       <h3>{appointment.service?.name}</h3>
-                      <span className={`status-badge status-${appointment.status}`}>
+                      <span className={`${classes.statusBadge} ${classes[`status_${appointment.status}`]}`}>
                         {appointment.status}
                       </span>
                     </div>
-                    <div className="appointment-details">
+
+                    <div className={classes.appointmentDetails}>
                       <p><strong>Patient:</strong> {appointment.patientName}</p>
                       <p><strong>Date:</strong> {new Date(appointment.appointmentDate).toLocaleDateString()}</p>
                       <p><strong>Time:</strong> {appointment.timeSlot}</p>
@@ -305,10 +285,11 @@ const Appointments = () => {
                         <p><strong>Notes:</strong> {appointment.notes}</p>
                       )}
                     </div>
+
                     {appointment.status === 'pending' && (
                       <button
                         onClick={() => handleCancel(appointment._id)}
-                        className="btn btn-danger"
+                        className={classes.dangerBtn}
                       >
                         Cancel Appointment
                       </button>
@@ -316,9 +297,9 @@ const Appointments = () => {
                   </div>
                 ))
               ) : (
-                <div className="no-appointments">
+                <div className={classes.noAppointments}>
                   <p>You don't have any appointments yet.</p>
-                  <button onClick={() => setShowForm(true)} className="btn btn-primary">
+                  <button onClick={() => setShowForm(true)} className={classes.primaryBtn}>
                     Book Your First Appointment
                   </button>
                 </div>

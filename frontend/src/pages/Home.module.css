@@ -1,0 +1,439 @@
+:root {
+  --primary-green: #2e8b57;
+  --light-green: #f1faf4;
+  --white: #ffffff;
+  --dark: #1f1f1f;
+  --gray: #555;
+  --transition: all 0.3s ease;
+}
+
+.home {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+  padding: 130px 0;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 90%;
+  margin: 80px auto 60px;
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.85), rgba(20, 80, 50, 0.85)),
+    url('https://img.freepik.com/free-photo/medical-banner-with-stethoscope_23-2149611190.jpg') center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 120px 20px;
+  border-radius: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin: 20px auto;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  max-width: 700px;
+  opacity: 0.95;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* BUTTONS */
+.btnPrimary,
+.btnSecondary,
+.btnLight {
+  text-decoration: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  display: inline-block;
+  text-align: center;
+  min-width: 140px;
+}
+
+.btnPrimary {
+  background: var(--white);
+  color: var(--primary-green);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btnPrimary:hover {
+  background: var(--light-green);
+  transform: scale(1.05);
+}
+
+.btnSecondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btnSecondary:hover {
+  background: var(--white);
+  color: var(--primary-green);
+  transform: scale(1.05);
+}
+
+.btnLight {
+  background: var(--white);
+  color: var(--primary-green);
+  border: 2px solid var(--white);
+}
+
+.btnLight:hover {
+  background: var(--light-green);
+  transform: scale(1.05);
+}
+
+/* FEATURES SECTION */
+.features {
+  padding: 80px 20px;
+  background: var(--light-green);
+  border-radius: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(1.8rem, 4vw, 2rem);
+  margin-bottom: 10px;
+  color: var(--primary-green);
+}
+
+.sectionHeader p {
+  color: var(--gray);
+  margin-bottom: 40px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.featureCard {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 30px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.2);
+}
+
+.featureCard h2 {
+  color: var(--primary-green);
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+  margin-bottom: 10px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.featureCard .suffix {
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  color: var(--primary-green);
+}
+
+.featureCard:hover h2 {
+  color: #0f490f;
+}
+
+.featureCard p {
+  color: var(--gray);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+/* SERVICES SECTION */
+.servicesPreview {
+  padding: 80px 20px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  border-radius: 15px;
+  padding: 40px 25px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  min-height: 200px;
+}
+
+.serviceCard:hover {
+  background: var(--primary-green);
+  color: var(--white);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(46, 139, 87, 0.25);
+}
+
+.serviceIcon {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: var(--primary-green);
+  margin-bottom: 15px;
+  transition: var(--transition);
+}
+
+.serviceCard:hover .serviceIcon {
+  color: var(--white);
+}
+
+.serviceCard h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  margin-bottom: 10px;
+}
+
+.serviceCard p {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.servicesCta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* ABOUT SECTION */
+.aboutPreview {
+  width: 90%;
+  margin: 0 auto 60px;
+  padding: 80px 20px;
+  background: var(--light-green);
+  border-radius: 20px;
+}
+
+.aboutContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.aboutText {
+  flex: 1;
+  min-width: 280px;
+}
+
+.aboutText h2 {
+  color: var(--primary-green);
+  margin-bottom: 15px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.aboutText p {
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.aboutImage {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.imagePlaceholder {
+  width: clamp(200px, 40vw, 260px);
+  height: clamp(200px, 40vw, 260px);
+  background: var(--white);
+  border-radius: 50%;
+  border: 6px solid var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(3rem, 8vw, 4rem);
+  color: var(--primary-green);
+  margin: 0 auto;
+  box-shadow: 0 4px 16px rgba(46, 139, 87, 0.3);
+}
+
+/* CTA SECTION */
+.cta {
+  width: 90%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #2e8b57, #1e6f45);
+  color: var(--white);
+  text-align: center;
+  padding: 90px 20px;
+  border-radius: 20px;
+}
+
+.cta h2 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  margin-bottom: 15px;
+}
+
+.cta p {
+  margin-bottom: 30px;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .home {
+    padding: 100px 0;
+  }
+
+  .hero {
+    margin: 60px auto 40px;
+    padding: 80px 20px;
+    border-radius: 15px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnPrimary,
+  .btnSecondary,
+  .btnLight {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .features,
+  .servicesPreview,
+  .aboutPreview,
+  .cta {
+    padding: 60px 15px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+  }
+
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .featureCard {
+    padding: 25px 10px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .serviceCard {
+    padding: 30px 20px;
+  }
+
+  .aboutContent {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .aboutText,
+  .aboutImage {
+    min-width: 100%;
+  }
+
+  .sectionHeader p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 80px 0;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .hero {
+    width: 95%;
+    margin: 40px auto 30px;
+    padding: 60px 15px;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .featureCard {
+    padding: 25px 15px;
+  }
+
+  .serviceCard {
+    padding: 25px 15px;
+    min-height: 180px;
+  }
+
+  .imagePlaceholder {
+    width: 180px;
+    height: 180px;
+    border-width: 4px;
+  }
+
+  .cta {
+    width: 95%;
+    padding: 60px 15px;
+  }
+
+  .aboutPreview {
+    width: 95%;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btnPrimary:hover,
+  .btnSecondary:hover,
+  .btnLight:hover {
+    transform: scale(1);
+  }
+
+  .btnPrimary:active,
+  .btnSecondary:active,
+  .btnLight:active {
+    transform: scale(0.98);
+  }
+
+  .featureCard:hover,
+  .serviceCard:hover {
+    transform: none;
+  }
+
+  .serviceCard:active {
+    transform: scale(0.98);
+  }
+}
