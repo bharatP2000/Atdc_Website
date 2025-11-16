@@ -10,70 +10,109 @@ const Services = () => {
 
   // Static categories shown as tiles
   const serviceCategories = [
-    {
-      title: "All Tests", 
-      icon: "💊",
-      description: "Comprehensive testing with accurate results",
-      category: "All Tests",
-    },
-    {
-      title: "Blood Tests",
-      icon: "🧪",
-      description: "Comprehensive blood testing with accurate results",
-      category: "Blood Tests",
-    },
-    {
-      title: "Imaging Services",
-      icon: "🏥",
-      description: "X-Ray",
-      category: "Imaging",
-    },
-    {
-      title: "Cardiology",
-      icon: "❤️",
-      description: "ECG, Echo, Holter monitoring services",
-      category: "Cardiology",
-    },
-    {
-      title: "Dental Care",
-      icon: "🦷",
-      description: "Full dental checkup and treatment services",
-      category: "Dental",
-    },
-
-    // 👉 Added new categories below
-
-    {
-      title: "Thyroid Tests",
-      icon: "🦋",
-      description: "T3, T4, TSH and complete thyroid profile testing",
-      category: "Thyroid Test",
-    },
-    {
-      title: "Vitamin Tests",
-      icon: "💊",
-      description: "Vitamin D, B12 and nutritional deficiency evaluation",
-      category: "Vitamin Test",
-    },
-    {
-      title: "Serology Tests",
-      icon: "🧫",
-      description: "RA Factor, CRP and infection-related blood tests",
-      category: "Serology Test",
-    },
-    {
-      title: "Kidney Tests",
-      icon: "⚗️",
-      description: "Micro Albumin and Kidney Function evaluation",
-      category: "Kidney Test",
-    },
-    {
-      title: "Infectious Disease Tests",
-      icon: "🦠",
-      description: "HIV, HBsAg and viral infection screening",
-      category: "Infectious Disease Test",
-    }
-  ];
+  {
+    title: "All Tests", 
+    icon: "💊",
+    description: "Comprehensive testing with accurate results",
+    category: "All Tests",
+  },
+  {
+    title: "Blood Tests",
+    icon: "🧪",
+    description: "CBC, Lipid Profile, Liver & Kidney function tests",
+    category: "Blood Tests",
+  },
+  {
+    title: "Imaging Services",
+    icon: "🏥",
+    description: "X-Ray, USG Abdomen imaging services",
+    category: "Imaging",
+  },
+  {
+    title: "Cardiology",
+    icon: "❤️",
+    description: "ECG, Echo, TMT stress test services",
+    category: "Cardiology",
+  },
+  {
+    title: "Dental Care",
+    icon: "🦷",
+    description: "General dental checkup and consultation",
+    category: "Dental",
+  },
+  {
+    title: "Thyroid Tests",
+    icon: "🦋",
+    description: "T3, T4, TSH and complete thyroid profile testing",
+    category: "Thyroid Test",
+  },
+  {
+    title: "Vitamin Tests",
+    icon: "💊",
+    description: "Vitamin D-3, B-12 deficiency analysis",
+    category: "Vitamin Test",
+  },
+  {
+    title: "Kidney Tests",
+    icon: "⚗️",
+    description: "Renal Function Test, Micro Albumin evaluation",
+    category: "Kidney Test",
+  },
+  {
+    title: "Urine Tests",
+    icon: "🧫",
+    description: "Routine Urine, Culture & Sensitivity tests",
+    category: "Urine Test",
+  },
+  {
+    title: "Infectious Disease Tests",
+    icon: "🦠",
+    description: "HIV, HBsAg viral infection screening",
+    category: "Infectious Disease",
+  },
+  {
+    title: "Inflammation Markers",
+    icon: "🔬",
+    description: "ESR, CRP inflammation testing",
+    category: "Inflammation Marker",
+  },
+  {
+    title: "Serology Tests",
+    icon: "💉",
+    description: "RA Factor and antibody testing",
+    category: "Serology",
+  },
+  {
+    title: "Allergy Tests",
+    icon: "🌸",
+    description: "IGE Immunoglobulin-E allergy testing",
+    category: "Allergy Test",
+  },
+  {
+    title: "Coagulation Tests",
+    icon: "🩸",
+    description: "PT INR blood clotting time evaluation",
+    category: "Coagulation Test",
+  },
+  {
+    title: "Hormone Tests",
+    icon: "🧬",
+    description: "FSH, LH, PRL women's health hormones",
+    category: "Hormone Test",
+  },
+  {
+    title: "Rheumatology",
+    icon: "🦴",
+    description: "Arthritis Profile and joint health markers",
+    category: "Rheumatology",
+  },
+  {
+    title: "Hearing Tests",
+    icon: "👂",
+    description: "Audiometry hearing ability analysis",
+    category: "Hearing Test",
+  },
+];
 
 
   useEffect(() => {

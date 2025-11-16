@@ -107,7 +107,7 @@
 
 .footerBottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);

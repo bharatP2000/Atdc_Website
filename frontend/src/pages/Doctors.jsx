@@ -1,6 +1,8 @@
 import React from "react";
 import "./Doctors.css";
 import { Link } from "react-router-dom";
+import arihant from "../assets/arihant_singhi.jpeg"
+import nikhil from "../assets/nikhil_sonthalia.jpeg"
 
 const Doctors = () => {
   // Dummy doctor data (no API)
@@ -16,7 +18,7 @@ const Doctors = () => {
       "Wednesday: 2:00 PM – 4:00 PM",
       "Friday: 2:00 PM – 4:00 PM",
     ],
-    image: "https://www.w3schools.com/howto/img_avatar.png",
+    image: arihant,
   },
   {
     _id: "2",
@@ -50,7 +52,7 @@ const Doctors = () => {
       "Wednesday: 5:00 PM – 6:00 PM",
       "Saturday: 5:00 PM – 6:00 PM",
     ],
-    image: "https://www.w3schools.com/howto/img_avatar.png",
+    image: nikhil,
   },
   {
     _id: "5",

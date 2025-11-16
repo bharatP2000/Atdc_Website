@@ -22,9 +22,9 @@ const Footer = () => {
               {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <FaTwitter />
               </a> */}
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
-              </a>
+              </a> */}
               {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a> */}
@@ -100,7 +100,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className={classes.developerLink}
             >
-              <span className={classes.developerName}>BHARAT KUMAR BAID</span>
+              <span className={classes.developerName}><b>BHARAT BAID</b></span>
             </a>
             <br/>
             <p>&copy; {new Date().getFullYear()} ATDC Health. All rights reserved.</p>

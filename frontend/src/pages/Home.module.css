@@ -83,9 +83,9 @@
 }
 
 .btnSecondary {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
+  background: var(--light-green);
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
 }
 
 .btnSecondary:hover {
